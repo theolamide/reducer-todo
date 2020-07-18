@@ -5,7 +5,9 @@ const Todo = (props) => {
 
     return (
         <li className={`item${props.element.completed ? " Done" : ""}`} onClick={() => props.dispatch({ type: 'TOGGLE_DONE', payload: props.element.id })}>
-            {props.element.item}
+            <strong>
+                {props.element.item}
+            </strong>
         </li>
     )
 }

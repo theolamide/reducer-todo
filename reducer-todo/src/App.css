@@ -57,6 +57,8 @@ li{
 .addedTask{
   cursor: pointer;
   color: white;
+  display: flex;
+  flex-direction: column;
   /* border: 2px solid black; */
 }
 
@@ -84,12 +86,15 @@ li{
 .item {
   background-color: #d38a52;
   /* width: 30%; */
+  /* font-size: large; */
   text-align: left;
   margin: 4px auto;
   cursor: pointer;
-  border-radius: 0.75rem;
+  border-radius: 0.55rem;
   text-align: center; 
-  padding-bottom: 0.25rem;
+  padding: 0.5rem;
+  padding-bottom: 0.75rem;
+  display:inline-block;
 }
 
 .item.Done{
