@@ -1,50 +1,110 @@
+body, a, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Gruppo';
+}
+
+h1{
+  color: #874312;
+}
+
+button{
+  font-family: 'Baloo 2', cursive;
+}
+
+button:hover{
+  color:white;
+}
+
+button:focus{
+  outline: 0;
+}
+
+input{
+  border-radius: 0.5rem;
+  width: 20%;
+  height: 2rem;
+  border: 0px;
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+}
+
+input:focus {
+  outline: none;
+}
+
+li{
+  list-style: none;
+}
 .App {
   text-align: center;
-  border: 1px solid red;
   height: 100vh;
-  padding: 5rem;
   background: #edc3a3;
 }
 
-.App-logo {
-  height: 40vmin;
+.todoFormParent{
+  padding: 2rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.addButton{
+  width: 4rem;
+  height: 2rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  margin-left: 0.25rem;
+  cursor: pointer;
+  background-color: #D38A52;
 }
 
 .addedTask{
   cursor: pointer;
+  color: white;
   /* border: 2px solid black; */
+}
+
+.listParent{
+  /* border: 1px solid black; */
+  border-radius: 0.5rem;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  overflow: auto;
+}
+
+.listParent::-webkit-scrollbar{
+  width: 10px;
+  height: 0px;
+  background-color: #EDC3A3;
+}
+
+.listParent::-webkit-scrollbar-thumb{
+  background-color:  #874312;
 }
 
 .item {
   background-color: #d38a52;
-  width: 30%;
+  /* width: 30%; */
   text-align: left;
   margin: 4px auto;
   cursor: pointer;
   border-radius: 0.75rem;
   text-align: center; 
+  padding-bottom: 0.25rem;
 }
 
 .item.Done{
+  color: black;
   text-decoration: line-through;
   background-color: #9e541c;
 }
 
-li{
-  list-style: none;
+.clearButton{
+  width: 8rem;
+  height: 2rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  margin-left: 0.25rem;
+  cursor: pointer;
+  background-color: #D38A52;
+  
 }
